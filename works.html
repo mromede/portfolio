@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+   <head> 
+     <meta charset="utf-8">
+    <title>Israel Omede | D.D.P</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Maven+Pro:700|Playfair+Display+SC|Exo+2' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="main.css">
+  <link rel='stylesheet' type='text/css' href='stylesheet.css'/>
+      <link rel="stylesheet" href="responsive.css">
+	  <script type='text/javascript' src='script.js'></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+     <body>
+	 <script src="jquery.js"></script>
+	 <script>
+	 $(document).ready(function() {
+	 $( ".thumbs-photo" ).click(function() {
+    $(document).keydown(function(key) {
+        switch(parseInt(key.which,10)) {
+			// Left arrow key pressed
+			case 37:
+				$('.thumbs-photo').animate({left: "-=10px"}, 'fast');
+				break;
+			// Up Arrow Pressed
+			case 38:
+				$('.thumbs-photo').animate({top: "-=10px"}, 'fast');
+				break;
+			// Right Arrow Pressed
+			case 39:
+				$('.thumbs-photo').animate({left: "+=10px"}, 'fast');
+				break;
+			// Down Array Pressed
+			case 40:
+				$('.thumbs-photo').animate({top: "+=10px"}, 'fast');
+				break;
+		}
+	});
+});
+});
+	 </script>
+	 <script src="rockpaperscissors.js"></script>
+       <header>
+      <a href="index.html" id="logo"> 
+         <h1><b>Israel Omede</b></h1> 
+         <h2>Designer-Developer-Programmer</h2>
+      </a> 
+      <nav> 
+          <ul>
+             
+            <li><a href="index.html" >Portfolio</a></li>
+            <li><a href="about.html" >About</a></li>
+			<li><a href="index.html" class="selected">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul> 
+      </nav>
+     </header>
+       <div id="wrapper">
+          <section>
+            <img src="robot.jpg" alt="Photograph of Israel Omede" class="work-photo">
+            <h3> Works</h3>
+            <p>Hi! Feel <b>free</b> to check out some(but not all) of the awesome projects I've worked on in the past. I'm always working on new things and will update them here when I'm done. Also, try to beat me in my game(s)!</p>
+			</section>
+			<section>
+			<h4>Can you beat me?<h4>
+			<p>Click <button type="button" onclick="gamerNow()">HERE</button> to play me in rock/paper/scissors. Good luck!</p> 
+			</section>
+			<section>
+			<h4>Videos</h4>
+			<p>
+				Making and editing videos is a hobby of mine that continues to grow each year. We are given so many resources that we sometimes don't even understand how much we can do.
+			</p>
+			</section>
+			<br />
+			<section>
+			<img src="bidenthumbs.jpg" alt="Thanks for Checking out this site!" class="thumbs-photo">
+			<p>Click on this guy, then you can move him around. It's quite entertaining!</p>
+			</section>
+  <footer>
+        <img src="twitter-wrap.png" alt="Twitter Logo" class="social-icon">
+         <img src="facebook-wrap.png" alt="Facebook Logo"class="social-icon">
+		 <p>*<i>More Projects/Works will still be added, stay tuned!</i>*</p>
+       <p>&copy; 2014 | Israel Omede</p>
+       </footer>     
+  </div>
+       </body>
+</html>
